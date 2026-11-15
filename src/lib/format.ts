@@ -1,0 +1,8 @@
+export function formatRating(value: number): string {
+  return value.toFixed(1).replace('.', ',');
+}
+
+export function formatDistance(km: number): string {
+  if (km < 1) return `${Math.round(km * 1000)} m`;
+  return `${km.toFixed(1).replace('.', ',')} km`;
+}
